@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sign Up Form</title>
+  </head>
+  <body>
+    <div id="signUpPage">
+      <div id="leftCard">
+        <img src="assets/monoMedia.gif" alt="monoMedia" />
+      </div>
+      <div id="rightCard">
+        <div class="rightCardSection" id="title">
+          <h1>MonoMail:<br />Minimalist Newsletter Sign-Up</h1>
+          <p>
+            A sleek black-and-white newsletter sign-up form for a fictional
+            email service that focuses on clean, distraction-free content
+            delivery.
+            <br />
+            <br />
+            MonoMail is a distraction-free, minimalist email newsletter service
+            designed for those who appreciate simplicity and clarity. In a world
+            filled with overwhelming notifications, flashy graphics, and
+            cluttered inboxes, MonoMail strips everything down to the
+            essentials—pure content, delivered in a clean and readable format.
+            <br />
+            <br />
+            With MonoMail, <b>less is more</b>—just words, ideas, and a clean
+            inbox experience
+          </p>
+        </div>
+        <div class="rightCardSection" id="formBody">
+          <h2>Sign Up</h2>
+          <form action="" method="get" id="monoForm">
+            <div class="formControl" id="firstName">
+              <label for="firstName" required>FIRST NAME:</label>
+              <input type="text" id="firstName" />
+            </div>
+            <div class="formControl" id="lastName">
+              <label for="lastName">LAST NAME:</label>
+              <input type="text" id="lastName" required />
+            </div>
+            <div class="formControl" id="email">
+              <label for="email">EMAIL:</label>
+              <input
+                type="email"
+                id="email"
+                pattern=".+@example\.com"
+                size="20"
+                required
+              />
+            </div>
+            <div class="formControl" id="phoneNumber">
+              <label for="phone"> PHONE NUMBER </label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                required
+              />
+            </div>
+            <div class="formControl" id="password">
+              <label for="pass">PASSWORD:</label>
+              <input
+                type="password"
+                id="pass"
+                name="password"
+                minlength="8"
+                required
+              />
+            </div>
+            <div class="formControl" id="confirmPassword">
+              <label for="pass">CONFIRM PASSWORD:</label>
+              <input
+                type="password"
+                id="pass"
+                name="password"
+                minlength="8"
+                required
+              />
+            </div>
+          </form>
+        </div>
+        <div class="rightCardSection" id="submission">
+          <button id="signUpButton">Sign Up</button>
+          <p>Already have an account? Log In</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
