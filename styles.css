@@ -24,7 +24,7 @@ body {
 #rightCard {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 20px;
   width: 70%;
   height: 100%;
   color: #ffffff;
@@ -54,6 +54,17 @@ body {
   width: 65%;
 }
 
+#monoForm input {
+  border: 2px solid #000;
+  margin-bottom: 15px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#monoForm input:invalid {
+  border-color: red;
+}
+
 #monoForm .formControl {
   display: flex;
   flex-direction: column;
@@ -64,12 +75,7 @@ body {
   font-weight: bold;
 }
 
-#submission {
-  margin-bottom: 50px;
-}
-
 #signUpButton {
-  width: 65%;
   height: 75px;
   font-weight: bold;
   font-size: 20px;
